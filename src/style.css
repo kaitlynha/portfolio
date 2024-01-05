@@ -13,7 +13,7 @@ body {
     margin: 0rem;
     -webkit-text-fill-color: var(--darkblue);
     background: rgb(183,174,255);
-    background: radial-gradient(circle, rgba(183,174,255,1) 0%, rgba(255,255,250,1) 80%);
+    background: radial-gradient(circle, rgba(183,174,255,1) 0%, rgba(255,255,250,1) 100%);
 }
 
 a {
@@ -107,8 +107,14 @@ a:hover {
 
 .projects {
     width: 100%;
-    margin: 8rem 8rem 8rem 8rem;
+    margin: 0rem 8rem 8rem 8rem;
     font-size: 1.2rem;
+}
+
+.projects img {
+    margin-top: 2rem;
+    display: block;
+    margin-left: 70rem;
 }
 
 .project-one {
@@ -129,6 +135,26 @@ a:hover {
     justify-content: space-between;
     -webkit-text-fill-color: var(--blue);
     font-size: 1rem;
+}
+
+.fun-facts {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 8rem;
+    background-color: rgba(85, 108, 224, 0.6);
+    -webkit-text-fill-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+}
+
+.fun-facts h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.facts {
+    margin-left: 1rem;
 }
 
 .footer {
