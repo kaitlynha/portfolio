@@ -1,0 +1,14 @@
+[
+    {
+      "question": "JavaScript",
+      "answer": "A programming language that enables interactive web pages."
+    },
+    {
+      "question": "HTML",
+      "answer": "Hypertext Markup Language; used for creating the structure of a web page."
+    },
+    {
+      "question": "CSS",
+      "answer": "Cascading Style Sheets; used for styling the visual presentation of a web page."
+    }
+  ]

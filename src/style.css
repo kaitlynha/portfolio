@@ -1,0 +1,102 @@
+:root{
+    --blue: #7485e8;
+    --lightblue: #263066;
+    --darkblue: #2b3778;
+    --background: #fffffa;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0rem;
+    -webkit-text-fill-color: var(--darkblue);
+    background: rgb(183,174,255);
+    background: radial-gradient(circle, rgba(183,174,255,1) 0%, rgba(255,255,250,1) 75%);
+}
+
+a {
+    text-decoration: none;
+    -webkit-text-fill-color: var(--darkblue);
+}
+
+a:hover {
+    -webkit-text-fill-color: var(--blue);
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+}
+
+.nav-bar a {
+    margin: 1rem 4rem 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.about-me {
+    font-size: 1.2rem;
+    margin: 4rem 4rem 4rem 8rem;
+}
+
+.my-desc {
+    width: 50%;
+    font-size: 1.2rem;
+    margin: 4rem 4rem 16rem 8rem;
+}
+
+.skills {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(43, 55, 120, .6);
+    -webkit-text-fill-color: var(--background);
+}
+
+.skills h2 {
+    margin-left: 8rem;
+}
+
+.skills ul {
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0rem 0rem 5rem;
+}
+
+.skills li {
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: var(--background);
+    padding: .8rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem;
+}
+
+.projects {
+    width: 100%;
+    height: 500px;
+}
+
+.footer {
+    -webkit-text-fill-color: var(--background);
+    text-align: center;
+    background-color: var(--darkblue);
+    padding: 30px 0px 20px 0px;
+}
