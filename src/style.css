@@ -1,9 +1,9 @@
 :root{
     --blue: #7485e8;
-    --lightblue: #263066;
+    --lightblue: #3b4895;
     --darkblue: #2b3778;
-    --background: #fffffa;
-    font-family: 'Roboto', sans-serif;
+    --background: #fffaff;
+    /*font-family: 'Roboto', sans-serif;*/
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -13,7 +13,7 @@ body {
     margin: 0rem;
     -webkit-text-fill-color: var(--darkblue);
     background: rgb(183,174,255);
-    background: radial-gradient(circle, rgba(183,174,255,1) 0%, rgba(255,255,250,1) 75%);
+    background: radial-gradient(circle, rgba(183,174,255,1) 0%, rgba(255,255,250,1) 80%);
 }
 
 a {
@@ -32,8 +32,10 @@ a:hover {
 }
 
 .star {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    margin-left: 32px;
 }
 
 .nav-bar ul {
@@ -53,6 +55,10 @@ a:hover {
     margin: 4rem 4rem 4rem 8rem;
 }
 
+.blue {
+    -webkit-text-fill-color: var(--blue);
+}
+
 .my-desc {
     width: 50%;
     font-size: 1.2rem;
@@ -62,8 +68,12 @@ a:hover {
 .skills {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color: rgb(43, 55, 120, .6);
+    background-color: rgba(85, 108, 224, 0.6);
     -webkit-text-fill-color: var(--background);
+}
+
+.starred span{
+    margin-right: 8px;
 }
 
 .skills h2 {
@@ -75,6 +85,7 @@ a:hover {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-content: center;
     margin: 2rem 0rem 0rem 5rem;
 }
 
@@ -89,9 +100,35 @@ a:hover {
     margin: 1.2rem;
 }
 
+.skills li:hover {
+    background-color: var(--background);
+    -webkit-text-fill-color: rgb(123, 142, 239);
+}
+
 .projects {
     width: 100%;
-    height: 500px;
+    margin: 8rem 8rem 8rem 8rem;
+    font-size: 1.2rem;
+}
+
+.project-one {
+    width: 30%;
+    margin-top: 8rem;
+    padding: 2rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: var(--blue);
+}
+
+.project-one h2 {
+    font-size: 1.6rem;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    -webkit-text-fill-color: var(--blue);
+    font-size: 1rem;
 }
 
 .footer {

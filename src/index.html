@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="nav-bar">
@@ -23,36 +25,53 @@
         </ul>
     </div>
     <div class="about-me">
-        <h1>Hi, I'm Kaitlyn Ha.</h1>
-        <h1>I'm a Software Engineering Student!</h1>
+        <h1>Hi, I'm Kaitlyn Ha.
+            <br>
+            I'm a 
+            <span class="blue">Software Engineering Student!</span>
+        </h1>
     </div>
     <div class="my-desc">
         <p>I'm a Junior at the University of Connecticut majoring in Computer Science with a concentration in Software Design and Development.</p>
-        <p>I'm interested in front and back-end development and looking for new opportunities!</p>
+        <p>I'm interested in full-stack development and looking for new opportunities!</p>
     </div>
 
-    <section class="skills">
+    <div class="skills" data-aos="fade-up" data-aos-duration="1000">
         <h2>Skills</h2>
         <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>JavaScript</li>
+            <li class="starred">
+                <span class="material-symbols-outlined">kid_star</span>Python</li>
             <li>HTML</li>
             <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C</li>
             <li>AWS</li>
             <li>Agile</li>
             <li>Git</li>
         </ul>
-    </section>
+    </div>
     
-    <section class="projects">
-        <p>hi</p>
-    </section>
+    <div class="projects">
+        <h1>Projects <span class="material-symbols-outlined">view_cozy</span></h1>
+        <div class="project-one">
+            <h2>Course Registration System</h2>
+            <div class="tools">
+                <p>Vue.js</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Python</p>
+                <p>AWS</p>
+            </div>
+            <p>Web application simulating a university course registration system. Features include OIDC login and course, student and professor management.</p>
+        </div>
+    </div>
 
     <section class="footer">
         <p>Created by Kaitlyn Ha.</p>
     </section>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
