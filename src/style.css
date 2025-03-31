@@ -118,8 +118,8 @@ a:hover {
 }
 
 .project-one {
-    width: 30%;
-    margin-top: 8rem;
+    width: 40%;
+    margin-top: 4rem;
     padding: 2rem;
     border-style: solid;
     border-radius: 1rem;
@@ -128,6 +128,15 @@ a:hover {
 
 .project-one h2 {
     font-size: 1.6rem;
+}
+
+.project-one a {
+    font-size: 1rem;
+    -webkit-text-fill-color: var(--blue);
+}
+
+.project-one a:hover {
+    -webkit-text-fill-color: var(--darkblue);
 }
 
 .tools {
