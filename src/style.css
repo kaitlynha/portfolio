@@ -7,9 +7,12 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
-    overflow-x: hidden;
     margin: 0rem;
     -webkit-text-fill-color: var(--darkblue);
     background: rgb(183,174,255);
@@ -81,7 +84,6 @@ a:hover {
 }
 
 .skills ul {
-    width: 100%;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -106,7 +108,6 @@ a:hover {
 }
 
 .projects {
-    width: 100%;
     margin: 0rem 8rem 8rem 8rem;
     font-size: 1.2rem;
 }
