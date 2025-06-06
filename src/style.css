@@ -16,7 +16,7 @@ body {
     margin: 0rem;
     -webkit-text-fill-color: var(--darkblue);
     background: rgb(183,174,255);
-    background: radial-gradient(circle, rgba(183,174,255,1) 0%, rgba(255,255,250,1) 100%);
+    background: radial-gradient(rgba(183,174,255,1) 0%, rgba(255,255,250,1) 100%);
 }
 
 a {
@@ -65,7 +65,7 @@ a:hover {
 .my-desc {
     width: 50%;
     font-size: 1.2rem;
-    margin: 4rem 4rem 16rem 8rem;
+    margin: 4rem 4rem 8rem 8rem;
 }
 
 .skills {
@@ -108,23 +108,27 @@ a:hover {
 }
 
 .projects {
-    margin: 0rem 8rem 8rem 8rem;
-    font-size: 1.2rem;
+  margin: 0rem 8rem 8rem 8rem;
+  font-size: 1.2rem;
 }
 
-.projects img {
-    margin-top: 2rem;
-    display: block;
-    margin-left: 70rem;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .project-one {
-    width: 40%;
-    margin-top: 4rem;
+    width: 100%;
+    height: 400px;
+    max-width: 600px;
     padding: 2rem;
+    margin-top: 2rem;
     border-style: solid;
     border-radius: 1rem;
     border-color: var(--blue);
+    aspect-ratio: 5 / 4;
+    box-sizing: border-box;
 }
 
 .project-one h2 {
@@ -133,11 +137,13 @@ a:hover {
 
 .project-one a {
     font-size: 1rem;
-    -webkit-text-fill-color: var(--blue);
+    -webkit-text-fill-color: var(--darkblue);
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
 }
 
 .project-one a:hover {
-    -webkit-text-fill-color: var(--darkblue);
+    -webkit-text-fill-color: var(--blue);
 }
 
 .tools {
@@ -167,9 +173,47 @@ a:hover {
     margin-left: 1rem;
 }
 
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    width: 80vw;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    margin: 0 auto;   
+    margin-bottom: 100px; 
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+.carousel img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    flex-shrink: 0;
+    transition: all 0.3s;
+    scroll-snap-align: center;
+}
+.carousel img.active {
+    width: 300px;
+    height: 300px;
+    transform: scale(1.05);
+    opacity: 1;
+    z-index: 1;
+}
+
 .footer {
     -webkit-text-fill-color: var(--background);
     text-align: center;
     background-color: var(--darkblue);
     padding: 30px 0px 20px 0px;
 }
+
