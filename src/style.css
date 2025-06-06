@@ -65,7 +65,7 @@ a:hover {
 .my-desc {
     width: 50%;
     font-size: 1.2rem;
-    margin: 4rem 4rem 8rem 8rem;
+    margin: 4rem 4rem 4rem 8rem;
 }
 
 .skills {
@@ -73,6 +73,7 @@ a:hover {
     padding-bottom: 4rem;
     background-color: rgba(85, 108, 224, 0.6);
     -webkit-text-fill-color: var(--background);
+    margin-bottom: 4rem;
 }
 
 .starred span{
@@ -193,8 +194,8 @@ a:hover {
     }
 
 .carousel img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     cursor: pointer;
     opacity: 0.6;
