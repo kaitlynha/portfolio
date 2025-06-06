@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaitlyn Ha</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +14,18 @@
 </head>
 <body>
     <div class="nav-bar">
-        <img src="favicon.png" class="star">
+        <img src="images/favicon.png" class="star">
         <ul>
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="images/KaitlynHa_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    My Resume
+                </a>
             </li>
             <li class="nav-item">
                 <a href="mailto:kaitlynha05@gmail.com">Contact Me</a>
@@ -37,6 +42,17 @@
     <div class="my-desc">
         <p>I am a recent graduate from the University of Connecticut majoring in Computer Science with a concentration in Software Design and Development and a minor in Business Analytics.</p>
         <p>I have interests in software engineering, front-end developement, and product management. I am always looking for new opportunities!</p>
+    </div>
+    <div class="my-desc">
+        <p>In my spare time, I like to explore new cities and countries, drink matcha, play tennis, and learn new things.</p>
+        <p>Click through my gallery! (It's only 5 pictures sorry...)</p>
+    </div>
+    <div class="carousel" id="carousel">
+        <img src="images/forest.jpg" alt="">
+        <img src="images/jellycat.png" alt="">
+        <img src="images/grad.jpg" alt="" class="active">
+        <img src="images/trevi.png" alt="">
+        <img src="images/matcha.jpg" alt="">
     </div>
 
     <div class="skills" data-aos="fade-up" data-aos-duration="1000">
@@ -56,56 +72,60 @@
     </div>
     
     <div class="projects" id="projects">
-        <img src="stars.png" class="three-stars" width="100px" height="100px">
         <h1>Projects <span class="material-symbols-outlined">view_cozy</span></h1>
-        <div class="project-one">
-            <h2>Benchmarking LLMs for Time Series Analysis</h2>
-            <div class="tools">
-                <p>Pytorch</p>
-                <p>Flask</p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Grafana</p>
+        <div class="project-grid">
+            <div class="project-one">
+                <a href="https://seniordesignday.engr.uconn.edu/seniorprojectpt/senior-design-2025-computer-science-and-engineering-team-01/" target="_blank" rel="noopener noreferrer">
+                    <h2>Benchmarking LLMs for Time Series Analysis</h2>
+                </a>
+                <div class="tools">
+                    <p>Pytorch</p>
+                    <p>Flask</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Grafana</p>
+                </div>
+                <p>Web application that lets users input data and harness the power of Chronos and One Fits All (two advanced LLMs) to perform seamless, intelligent time series analysis.</p>
+                <p>Code available on my Github!</p>
             </div>
-            <p>Web application that lets users input data and harness the power of Chronos and One Fits All (two advanced LLMs) to perform seamless, intelligent time series analysis.</p>
-            <p>Code available on my Github!</p>
-        </div>
-        <div class="project-one">
-            <h2>Improving Customer Retention with Travelers</h2>
-            <div class="tools">
-                <p>MariaDB</p>
-                <p>Lucidchart</p>
+            <div class="project-one">
+                <h2>Improving Customer Retention with Travelers</h2>
+                <div class="tools">
+                    <p>MariaDB</p>
+                    <p>Lucidchart</p>
+                </div>
+                <p>Created a mock database and utilized SQL queries to help Travelers consultants improve customer retention within Renters Insurance.</p>
             </div>
-            <p>Created a mock database and utilized SQL queries to help Travelers consultants improve customer retention within Renters Insurance.</p>
-        </div>
-        <div class="project-one">
-            <h2>Skin Care Website Design</h2>
-            <div class="tools">
-                <p>Figma</p>
+            <div class="project-one">
+                <a href="https://www.figma.com/design/3YompfSBLTciWPYiFXn1Pu/Skin-Care-Prototype?node-id=0-1&t=mMcH80zmddw1KGX6-1">
+                    <h2>Skin Care Website Design</h2>
+                </a>
+                <div class="tools">
+                    <p>Figma</p>
+                </div>
+                <p>A modern, user-centered website prototype for a skincare brand, combining clean UI/UX design principles with insights from user research to create an intuitive, visually soothing experience that guides users effortlessly from product discovery to checkout.</p>
             </div>
-            <a href="https://www.figma.com/design/3YompfSBLTciWPYiFXn1Pu/Skin-Care-Prototype?node-id=0-1&t=mMcH80zmddw1KGX6-1">Link to Wireframe</a>
-            <p>A modern, user-centered website prototype for a skincare brand, combining clean UI/UX design principles with insights from user research to create an intuitive, visually soothing experience that guides users effortlessly from product discovery to checkout.</p>
-        </div>
-        <div class="project-one">
-            <h2>Identifying and Adapting to Customer Trends</h2>
-            <div class="tools">
-                <p>MATLAB</p>
-                <p>Pandas</p>
-                <p>Scikit-learn</p>
+            <div class="project-one">
+                <h2>Identifying and Adapting to Customer Trends</h2>
+                <div class="tools">
+                    <p>MATLAB</p>
+                    <p>Pandas</p>
+                    <p>Scikit-learn</p>
+                </div>
+                <p>Conducted linear regression, K-means clustering, and time series analysis on the Customer Trends dataset from Kaggle to identify actionable insights and strategic recommendations for improving customer retention.</p>
             </div>
-            <p>Conducted linear regression, K-means clustering, and time series analysis on the Customer Trends dataset from Kaggle to identify actionable insights and strategic recommendations for improving customer retention.</p>
-        </div>
-        <div class="project-one">
-            <h2>Course Registration System</h2>
-            <div class="tools">
-                <p>Vue.js</p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Python</p>
-                <p>AWS</p>
+            <div class="project-one">
+                <h2>Course Registration System</h2>
+                <div class="tools">
+                    <p>Vue.js</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Python</p>
+                    <p>AWS</p>
+                </div>
+                <p>Web application simulating a university course registration system. Features include OIDC login and course, student and professor management.</p>
+                <p>Code available on my Github!</p>
             </div>
-            <p>Web application simulating a university course registration system. Features include OIDC login and course, student and professor management.</p>
-            <p>Code available on my Github!</p>
         </div>
     </div>
 
@@ -126,5 +146,6 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+
 </body>
 </html>
